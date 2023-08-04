@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p>
+    <h1>diffrents between local storage and session storage</h1> <br>
+
+    
+1. Data Persistence:
+   - Local Storage: Data stored in local storage persists even after the browser is closed and is available across browser sessions. It remains stored until explicitly removed by the user or cleared programmatically.
+   - Session Storage: Data stored in session storage is only available within the same browsing session. It is cleared when the user closes the browser or tab.
+
+<br>2. Scope: 
+   - Local Storage: Data stored in local storage is accessible to all tabs and windows of the same origin (same protocol, host, and port).
+   - Session Storage: Data stored in session storage is only accessible within the same tab or window that created it.
+
+<br>3. Sharing Data:
+   - Local Storage: Since data in local storage is accessible across all tabs and windows of the same origin, it can be used to share data between different parts of a web application that are open in different tabs or windows.
+   - Session Storage: Data in session storage is limited to the current tab or window, so it can't be shared directly with other tabs or windows.
+
+<br>4. Expiration:
+   - Local Storage: Data in local storage does not have an expiration date, so it persists until explicitly removed.
+   - Session Storage: Data in session storage is automatically cleared when the browsing session ends, i.e., when the browser or tab is closed.
+
+
+</p>
+
+<p>
+    <h1>ifference between global scope and block scope</h1>
+
+    Global Scope:
+Variables declared in the global scope are accessible from anywhere in the code, including all functions, blocks, or nested scopes.
+The lifetime of variables in the global scope extends throughout the entire runtime of the application.
+Global variables can lead to potential naming conflicts and make it harder to maintain code as they are easily accessible and modifiable from any part of the application.
+In JavaScript, variables declared outside of any function or block have global scope. <br>
+
+
+<br> Block Scope:
+Variables declared in a block scope are only accessible within that specific block or statement. A block is usually defined by curly braces {} in most programming languages.
+The lifetime of block-scoped variables is limited to the execution of the block in which they are declared. Once the block is exited, the variables are no longer accessible.
+Block-scoped variables help in avoiding naming conflicts and are more secure since they are confined to the specific block where they are declared.
+</p>
+
+<p>
+    <h1>Javascript undefine reasons</h1>
+
+   <br> 1) Variable Declaration without Initialization:
+    If you declare a variable without assigning any value to it, the variable will have an initial value of undefined.
+
+   <br> 2) In JavaScript, there are several reasons why a variable or expression might evaluate to undefined. Here are five common situations that can result in undefined:
+    
+    Variable Declaration without Initialization:
+    If you declare a variable without assigning any value to it, the variable will have an initial value of undefined.
+    
+   <br>3) Functions without a Return Statement:
+   If a function does not have an explicit return statement or if it reaches the end of the function without returning anything, 
+   the function will return undefined.
+</p>
+
+<p>
+
+</p>
+
+
+
+
+
+</body>
+</html>
